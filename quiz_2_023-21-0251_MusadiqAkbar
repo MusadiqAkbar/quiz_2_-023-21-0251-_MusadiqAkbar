@@ -1,0 +1,46 @@
+// Task 1. Write a function that takes 2 parameters (1. number, 2nd total amount).
+// And this function should return the percentage of total amount with that number.
+function calculatePercentage(number, totalAmount) {
+    if (totalAmount === 0) {
+      return 0; // To avoid division by zero, return 0% if totalAmount is zero.
+    } else {
+      const percentage = (number / totalAmount) * 100;
+      return percentage;
+    }
+  }
+  
+  // Task 2. Write an array of objects containing person information.
+  const persons = [
+    {
+      id: 1,
+      personName: "Fahad",
+      personAge: 23,
+      personIncome: 2000000,
+    },
+    {
+      id: 2,
+      personName: "Zoya",
+      personAge: 23,
+      personIncome: 3000000,
+    },
+  ];
+  
+  // Print information about each person in the array.
+  persons.forEach((person) => {
+    console.log(`Person ${person.id} name is ${person.personName} having salary ${person.personIncome}`);
+  });
+  
+  // Task 3. Print properties of an object.
+  const sampleObject = {
+    id: 1,
+    personName: "Fahad",
+    personAge: 23,
+    personIncome: 2000000,
+  };
+  
+  // Print properties of the sampleObject.
+  console.log("Properties are below:");
+  for (const property in sampleObject) {
+    console.log(property);
+  }
+  
